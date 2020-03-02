@@ -1,2 +1,5 @@
-var g = G$('John', 'Doe');
-g.greet();
+$("select").change(() => {
+    console.log($("#lang").val());
+});
+
+// $('#greeting').text(g.greet());

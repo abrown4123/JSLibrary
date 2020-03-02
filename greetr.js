@@ -65,6 +65,16 @@
             this.language = lang;
             this.validate();
             return this;
+        },
+
+        HTMLGreeting: function(selector, formal) {
+            if(!$) {
+                throw 'jQuery not found';
+            }
+
+            if (!selector) {
+                throw 'Missing jQuery selector';
+            }
         }
     };
 
