@@ -75,6 +75,17 @@
             if (!selector) {
                 throw 'Missing jQuery selector';
             }
+
+            let msg;
+            if (formal) {
+                msg = this.formalGreeting();
+            } else {
+                msg = this.greeting();
+            }
+
+            $(selector).html(msg);
+            
+            return this;
         }
     };
 
